@@ -10,3 +10,7 @@ $ nest new project-name
 $ nest g controller [name]
 ````
 
+```` Install Swagger
+$ npm install --save @nestjs/swagger
+````
+
