@@ -14,3 +14,7 @@ $ nest g controller [name]
 $ npm install --save @nestjs/swagger
 ````
 
+```` Install Services
+$ nest g service [name]
+````
+
