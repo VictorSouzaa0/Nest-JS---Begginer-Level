@@ -1,0 +1,12 @@
+```` Install Nest JS
+$ npm install -g npm@11.6.0
+````
+
+```` Create Project Nest JS
+$ nest new project-name
+````
+
+```` Create controller
+$ nest g controller [name]
+````
+
