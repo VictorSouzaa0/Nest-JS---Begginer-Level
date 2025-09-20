@@ -22,3 +22,16 @@ $ nest g service [name]
 $ nest g module [name]
 ````
 
+
+```` Install prisma
+$ npm install prisma --save-dev
+````
+
+```` Migrate table (sqlite)
+$  npx prisma migrate dev --name init
+````
+
+```` Install prisma client
+$  npm install @prisma/client
+````
+
