@@ -8,7 +8,7 @@ CREATE TABLE "User" (
     "updatedAt" DATETIME NOT NULL
 );
 
--- CreateTable 
+-- CreateTable
 CREATE TABLE "Questions" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     "title" TEXT NOT NULL,
@@ -33,3 +33,6 @@ CREATE TABLE "Answers" (
 
 -- CreateIndex
 CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "User_name_key" ON "User"("name");
