@@ -9,7 +9,7 @@ export class UserController {
     
     @Post('signup')
     async signupUser(
-        @Body() userData: Prisma.UserCreateInput,
+        @Body() userData: CrateUserDTO,
     ): Promise<UserModel> {
         return this.userSerivce.createUser({...userData});
     }
