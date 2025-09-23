@@ -1,10 +1,5 @@
-export class CreateUserDTO {
+export class CrateUserDTO {
     username: string;
-    email: string;
-    password: string;
-}
-
-export class LoginUser {
     email: string;
     password: string;
 }
