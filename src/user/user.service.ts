@@ -3,6 +3,7 @@ import { Prisma } from 'generated/prisma';
 import { PrismaService } from 'src/database/prisma.service';
 import { User } from 'generated/prisma';
 import * as bcrypt from 'bcrypt';
+import { LoginUserDTO } from './user.dto';
 
 @Injectable()
 export class UserService {
@@ -38,5 +39,12 @@ export class UserService {
             where,
         }); 
     }
+
+    private readonly users = [(data: LoginUserDTO)  => data.email]
+
+    async findOne(email: string): Promise<User>{
+        return this.users.find(users => users.email == email)/
+    }
+
 }
 
