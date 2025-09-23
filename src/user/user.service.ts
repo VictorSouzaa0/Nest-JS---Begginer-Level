@@ -43,7 +43,7 @@ export class UserService {
     private readonly users = [(data: LoginUserDTO)  => data.email]
 
     async findOne(email: string): Promise<User>{
-        return this.users.find(users => users.email == email)/
+        return this.users.find(users => users.email == email);
     }
 
 }
