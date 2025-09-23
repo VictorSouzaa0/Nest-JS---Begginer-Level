@@ -3,3 +3,8 @@ export class CrateUserDTO {
     email: string;
     password: string;
 }
+
+export class LoginUserDTO{
+    username: string;
+    password: string;
+}
