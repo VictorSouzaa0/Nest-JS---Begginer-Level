@@ -5,9 +5,4 @@ import { LoginUserDTO } from 'src/user/user.dto';
 export class AuthController {
     constructor(private authService: AuthService ){}
 
-    @HttpCode(HttpStatus.OK)
-    @Post('login')
-    signIn(@Body() data: LoginUserDTO) {
-        return this.authService.signIn(data.email, data.password);
-    }
 }
