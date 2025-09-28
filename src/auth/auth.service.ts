@@ -7,15 +7,4 @@ import { JwtService } from '@nestjs/jwt';
 
 @Injectable()
 export class AuthService {
-    /*
-    constructor(
-        private usersService: UserService,
-        private jwtService: JwtService
-    ){}
-    async signIn(
-        username: string,
-        password: string,
-    ):Promise <{access_token: string}> {}
-    }
-*/
 }

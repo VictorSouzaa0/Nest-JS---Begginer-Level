@@ -12,6 +12,5 @@ export class CreateUserDTO {
 export class LoginUserDTO{
     @ApiProperty()
     email: string;
-    @ApiProperty()
-    password: string;
+
 }
