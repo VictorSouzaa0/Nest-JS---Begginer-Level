@@ -13,5 +13,4 @@ export class UserController {
         return this.userSerivce.createUser({...userData});
     }
     
-    
 }
